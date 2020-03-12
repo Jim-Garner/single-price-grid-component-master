@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E6EFF6;
+}
+
+
+@media screen and (min-width: 900px){
+    .wrapper {
+    margin: auto;
+    display: grid;
+    border-radius: 5px;
+    overflow: hidden;
+    grid-template-columns: 390px 390px;
+    grid-template-rows: 260px 300px;
+
+
+}
+
+.sub-section .content-buffer {}
+
+.content-buffer {
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    height: 80%;
+    
+
+}
+
+header .content-buffer {
+    width: 90%;
+}
+
+header {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+}
+
+header h2 {
+    font-family: "Karla";
+    font-weight: 700;
+    color: hsl(179, 62%, 43%)
+}
+header h3 {
+    font-family: "Karla";
+    color: hsl(71, 73%, 54%);
+}
+
+header p{ 
+    font-family: "Karla";
+    line-height: 25px;
+    font-weight: 700;
+    color:#B9BCC1;
+    font-size: 16px;
+    width: 85%;
+}
+
+.sub-section {
+    background-color: #2BB3B1;
+    color: white;
+    font-family: "Karla";
+    display: flex;
+
+}
+
+.sub-section h3 {
+}
+.price {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.price-point {
+    font-weight: 400;
+
+    
+}
+
+.btn-wrapper {
+    margin: auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: relative;
+}
+
+.sign-up-btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: large;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    font-weight: 700;
+    box-shadow: grey 0px 1px 8px 1px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.sign-up-btn:hover {
+    background-color: whitesmoke ;
+    color: hsl(71, 73%, 54%);
+    border: hsl(71, 73%, 54%) solid 1px;
+}
+
+
+.why-us {
+    background-color: #4ABEBD;
+    display: flex;
+
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-us h3 {
+    font-family: "Karla";
+    color: white;
+}
+
+.why-us li {
+    line-height: 22px;
+    font-family: "Karla";
+    color: white;
+    font-weight: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Karla";
+    background-color:  hsl(71, 73%, 54%);
+    opacity: 0.5;
+}
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width: 900px){
+    .wrapper {
+    width: 90%;
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.content-buffer {
+    width: 85%;
+    margin: auto;
+
+}
+
+header {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+header h2 {
+    font-family: "Karla";
+    font-weight: 700;
+    color: hsl(179, 62%, 43%)
+}
+header h3 {
+    font-family: "Karla";
+    color: hsl(71, 73%, 54%);
+}
+
+header p{ 
+    font-family: "Karla";
+    line-height: 25px;
+    font-weight: 700;
+    color:#B9BCC1;
+    font-size: 16px;
+}
+
+.sub-section {
+    background-color: #2BB3B1;
+    padding-bottom: 20px;
+    color: white;
+    font-family: "Karla";
+    flex: 1;
+
+}
+
+.sub-section h3 {
+}
+.price {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.price-point {
+    font-weight: 400;
+
+    
+}
+
+.btn-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: relative;
+}
+
+.sign-up-btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: large;
+    background-color: hsl(71, 73%, 54%);
+    border: 0;
+    font-weight: 700;
+    box-shadow: grey 0px 1px 8px 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+.sign-up-btn:hover {
+    background-color: whitesmoke ;
+    color: hsl(71, 73%, 54%);
+    border: hsl(71, 73%, 54%) solid 1px;
+}
+
+
+.why-us {
+    background-color: #4ABEBD;
+    flex: 1;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.why-us h3 {
+    font-family: "Karla";
+    color: white;
+}
+
+.why-us li {
+    line-height: 22px;
+    font-family: "Karla";
+    color: white;
+    font-weight: 1;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-family: "Karla";
+    background-color:  hsl(71, 73%, 54%);
+    opacity: 0.5;
+}
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width: 300px){
+
+* {
+    display: none;
+}
+    
+}
